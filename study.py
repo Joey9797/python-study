@@ -98,21 +98,29 @@
 
 
 
-import random
+# import random
 
-celsius_temps = [0, 10, 15, 20, 25, 30, 35]
-random.shuffle(celsius_temps)
-print(celsius_temps)
+# celsius_temps = [0, 10, 15, 20, 25, 30, 35]
+# random.shuffle(celsius_temps)
+# print(celsius_temps)
 
-result = list(map(lambda x :"HOT" if  x >= 16.5 else "COLD", celsius_temps))
-print(result)
+# result = list(map(lambda x :"HOT" if  x >= 16.5 else "COLD", celsius_temps))
+# print(result)
 
-def decideTemp(a):
-    if a >= 16.5:
-        return 'HOT'
+# def decideTemp(a):
+#     if a >= 16.5:
+#         return 'HOT'
     
-    else:
-        return 'COLD'
+#     else:
+#         return 'COLD'
     
-result = list(map(decideTemp, celsius_temps))
-print(result)
+# result = list(map(decideTemp, celsius_temps))
+# print(result)
+
+my_dict = {'a': 10, 'b': 5, 'c': 15}
+
+min_key = min(my_dict, key=lambda x : my_dict[x])
+print(min_key)
+
+
+

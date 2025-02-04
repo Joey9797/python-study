@@ -1,8 +1,11 @@
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
 def under_60(scores):
-    pass
-    # 여기에 코드를 작성하여 함수를 완성합니다.
+    count = 0
+    for score in scores:
+        if score < 60:
+            count += 1
+    return count
 
 
 # 추가 테스트를 위한 코드 작성 가능

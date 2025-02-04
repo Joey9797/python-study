@@ -2,8 +2,13 @@
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
 # 파이썬 내장 함수 min 함수를 사용하지 않습니다.
 def min_score(scores):
-    pass
-    # 여기에 코드를 작성하여 함수를 완성합니다.
+    score = scores[0]
+    for score in scores:
+        if score <= scores[0]:
+            score = score
+        else:
+            score = scores[0]
+    return score
 
 
 # 추가 테스트를 위한 코드 작성 가능

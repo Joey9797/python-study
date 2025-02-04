@@ -1,8 +1,24 @@
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
+# def is_user_data_valid(user_data):
+#     falseData = 0
+#     for data in user_data:
+#         if user_data[data] == '':
+#             falseData += 1
+#     if falseData > 0:
+#         return False
+#     else:
+#         return True
+
 def is_user_data_valid(user_data):
-    pass
-    # 여기에 코드를 작성하여 함수를 완성합니다.
+    for value in user_data.values():
+        if value == '':
+            return False
+    return True
+
+
+
+    
 
 
 # 추가 테스트를 위한 코드 작성 가능
@@ -21,7 +37,7 @@ print(is_user_data_valid(user_data1)) # False
 
 user_data2 = {
     'id': 'jungssafy',
-    'password': '1q2w3e4r',
+    'password': '',
 }
 print(is_user_data_valid(user_data2)) # True
 #####################################################

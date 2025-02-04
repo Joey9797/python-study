@@ -1,19 +1,16 @@
 '''
-문제 1: 짝수 개수 세기
+문제 10: 소수 판별 함수
 
-정수 리스트에서 짝수의 개수를 세는 함수를 작성하시오.
+주어진 숫자가 소수(prime number) 인지 확인하는 함수를 작성하시오.
 '''
 
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
 
-def count_even(lst):
-    count = 0
-    for num in lst:
-        if num % 2 == 0:
-            count += 1
-    return count
-    
+def is_prime():
+    # 여기에 코드를 작성하세요.
+    pass
+
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
 
@@ -21,7 +18,7 @@ def count_even(lst):
 # 아래 코드를 삭제하는 경우 
 # 모든 책임은 삭제한 본인에게 있습니다. 
 ############## 테스트 코드 삭제 금지 #################
-print(count_even([1, 2, 3, 4, 5, 6]))  # 3
-print(count_even([7, 9, 11]))          # 0
-print(count_even([2, 4, 6, 8, 10]))    # 5
+print(is_prime(7))   # True
+print(is_prime(10))  # False
+print(is_prime(2))   # True
 #####################################################

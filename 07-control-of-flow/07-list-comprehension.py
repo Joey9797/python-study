@@ -1,4 +1,7 @@
 # 기존 방식
+import pprint
+
+
 numbers = [1, 2, 3, 4, 5]
 squared_numbers = []
 
@@ -18,7 +21,14 @@ data1 = [[0] * (5) for _ in range(5)]
 print(data1)
 # 또는
 data2 = [[0 for _ in range(5)] for _ in range(5)]
-print(data2)
+pprint.pprint(data2)
+
+# data1 = [[0]*5
+#          for _ in range(5)]
+# data2 = [[0 for _ in range(5)]
+#          for _ in range(5)] 
+# print(data1)
+# print(data2)
 
 """
 [[0, 0, 0, 0, 0],

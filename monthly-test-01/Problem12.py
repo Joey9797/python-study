@@ -1,18 +1,15 @@
 '''
-문제 3: 음수 개수 세기
+문제 12: 괄호 유효성 검사 (Valid Parentheses)
 
-정수 리스트에서 음수의 개수를 세는 함수를 작성하시오.
+'(', ')', '{', '}', '[', ']'로 이루어진 문자열이 올바른 괄호 구조인지 확인하는 함수를 작성하시오.
 '''
 
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
 
-def count_negatives(lst):
-    count = 0
-    for num in lst:
-        if num < 0:
-            count += 1
-    return count
+def is_valid_parentheses():
+    # 여기에 코드를 작성하세요.
+    pass
 
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
@@ -21,6 +18,8 @@ def count_negatives(lst):
 # 아래 코드를 삭제하는 경우 
 # 모든 책임은 삭제한 본인에게 있습니다. 
 ############## 테스트 코드 삭제 금지 #################
-print(count_negatives([-1, -2, 3, 4]))  # 2
-print(count_negatives([0, 1, 2, 3]))    # 0
+print(is_valid_parentheses("()[]{}"))     # True
+print(is_valid_parentheses("(]"))         # False
+print(is_valid_parentheses("([{}])"))     # True
+print(is_valid_parentheses("((()))["))    # False
 #####################################################

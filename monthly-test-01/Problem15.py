@@ -1,18 +1,15 @@
 '''
-문제 3: 음수 개수 세기
+문제 15: 숫자 정렬 후 이어붙이기 (가장 큰 수 만들기)
 
-정수 리스트에서 음수의 개수를 세는 함수를 작성하시오.
+양의 정수 리스트를 받아, 숫자를 이어 붙여 가장 큰 수를 만드는 함수를 작성하시오.
 '''
 
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
 
-def count_negatives(lst):
-    count = 0
-    for num in lst:
-        if num < 0:
-            count += 1
-    return count
+def largest_concatenated_number():
+    # 여기에 코드를 작성하세요.
+    pass
 
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
@@ -21,6 +18,7 @@ def count_negatives(lst):
 # 아래 코드를 삭제하는 경우 
 # 모든 책임은 삭제한 본인에게 있습니다. 
 ############## 테스트 코드 삭제 금지 #################
-print(count_negatives([-1, -2, 3, 4]))  # 2
-print(count_negatives([0, 1, 2, 3]))    # 0
+print(largest_concatenated_number([3, 30, 34, 5, 9]))  # "9534330"
+print(largest_concatenated_number([10, 2]))            # "210"
+print(largest_concatenated_number([1, 1, 1]))          # "111"
 #####################################################

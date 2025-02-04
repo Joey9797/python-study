@@ -1,19 +1,17 @@
 '''
-문제 1: 짝수 개수 세기
+문제 6: 회문 판별하기
 
-정수 리스트에서 짝수의 개수를 세는 함수를 작성하시오.
+주어진 문자열이 앞뒤가 같은 회문(palindrome) 인지 확인하는 함수를 작성하시오.
 '''
 
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
 
-def count_even(lst):
-    count = 0
-    for num in lst:
-        if num % 2 == 0:
-            count += 1
-    return count
-    
+def is_palindrome(string):
+    if string[0] == string[-1]:
+        return True
+    return False
+
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
 
@@ -21,7 +19,6 @@ def count_even(lst):
 # 아래 코드를 삭제하는 경우 
 # 모든 책임은 삭제한 본인에게 있습니다. 
 ############## 테스트 코드 삭제 금지 #################
-print(count_even([1, 2, 3, 4, 5, 6]))  # 3
-print(count_even([7, 9, 11]))          # 0
-print(count_even([2, 4, 6, 8, 10]))    # 5
+print(is_palindrome('racecar'))  # True
+print(is_palindrome('hello'))    # False
 #####################################################

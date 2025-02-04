@@ -127,8 +127,21 @@
 #            for num in myList]
 # print(newList)
 
-# num = [1, 2, 3, 4, 5]
-# newList = list(map(lambda x: "짝수" if num % 2 = 0 else "홀수", [1, 2, 3, 4, 5]))
 
 
+# mySet = ('a', 1, 'b', 2, 'c', 2)
+# a, *b = mySet
+# print(b)
 
+
+# def check_even(lst):
+#     for num in lst:
+#         lambda num : '짝수' if num % 2 == 0 else '홀수'
+#         return x
+
+# print(check_even([1, 2, 3, 4, 5]))
+
+# newList = list(map(lambda x: "짝수" if x % 2 == 0 else "홀수", [1, 2, 3, 4, 5]))
+# print(newList)
+
+print([[0]]*5)
